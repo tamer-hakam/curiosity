@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene>
+    <a-assets>
+		<a-sset-item id="ele-o" src="12228_Dog_v1_L2.obj"/>
+		<a-sset-item id="ele-m" src="12228_Dog_v1_L2.mtl"/>
+	</a-assets>
+
+<!--<a-torus 
+position="1 1 -5"; 
+color="red";
+radius="1.2">
+</a-torus> -->
+
+<a-entity camera position="0 3 0.2" ></a-entity>
+
+<a-obj-model src="#ele-o"; mtl="#ele-m"; 
+			position="0 0 -5"
+			scale="0.08 0.08 0.08"
+			rotation="-90 0"
+			
+			></a-obj-model>
+
+</a-scene>
+
+
+
+</body>
+
+</html>
