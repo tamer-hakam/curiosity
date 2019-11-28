@@ -22,11 +22,16 @@ radius="1.2">
 
 <a-obj-model src="#ele-o"; mtl="#ele-m"; 
 			position="0 0 -5"
-			scale="0.08 0.08 0.08"
-			rotation="-90 0"
-			
+			scale="0.05 0.05 0.05"
+			rotation="-90 180 180"
+			animation="property: rotation;
+			from:-90 180 180;
+			to: -90 180 -180; 
+			loop: true; 
+			elasticity:  0;
+			easing:  linear;
+			dur: 15000";
 			></a-obj-model>
-
 </a-scene>
 
 
